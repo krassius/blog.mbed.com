@@ -62,9 +62,11 @@ var q = async.queue(function(url, next) {
       }, function(err, pretty) {
         if (err) throw err;
 
+        var bt = body.title.replace(/"/g, "'");
+
         var md = `---
 layout:         post-mbed-org
-title:          "${body.title}"
+title:          "${bt}"
 date:           ${body.date}
 author:         ${body.author}
 tags:           ${body.tags.join(', ')}

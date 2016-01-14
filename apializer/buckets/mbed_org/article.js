@@ -11,7 +11,7 @@ extract = {
     return location + '';
   },
   title: function($) {
-    return $('.blog-container h2').text()
+    return $($('.blog-container h2')[0]).text()
   },
   author: function($) {
     return $('.content-info .authortext').text()
