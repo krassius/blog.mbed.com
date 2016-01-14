@@ -7,26 +7,45 @@ tags:           library, updates
 originalUrl:    https://developer.mbed.org/blog/entry/13/
 ---
 
-<p></p>
-<p>After a lot of work, we&apos;ve just released a major update to the&#xA0;libraries
-  (v5). Hopefully, you&apos;ll hardly notice...&#xA0;</p>
-<p>The majority of this upgrade is totally behind the scenes, getting the&#xA0;core
-  robust and ready for the things we want to do with the API now&#xA0;and
-  in the future. Whilst it shouldn&apos;t really be visible, please tell&#xA0;us
-  if we break any of your code when you upgrade! Our next focus with&#xA0;the
-  Libraries will be on the API itself, so expect some slightly more&#xA0;invasive
-  improvements then. And some of the new tricks to come to&#xA0;light :)&#xA0;</p>
-<p>...but we couldn&apos;t do an update without giving you something new!
-  So&#xA0;in addition to the new Ticker and Timeout classes, we&apos;ve added
-  file&#xA0;system access to the USB drive. No documentation yet, but the
-  API page&#xA0;should give you a clue:&#xA0;</p>
-<p>http://mbed.co.uk/projects/libraries/api/mbed/trunk/LocalFileSystem&#xA0;</p>
-<p>We think this might find some good applications, so we&apos;re interested&#xA0;to
-  hear how you use it.&#xA0;</p>
-<p>When you start a new project, you will automatically pull in the new&#xA0;v5
-  mbed Library. For existing projects, clicking on the mbed library&#xA0;in
-  your file tree should provide you with an &quot;update&quot; button.&#xA0;</p>
-<p>As ever, please bring to our attention any problems or questions you&#xA0;have.&#xA0;</p>
-<p>Have Fun!
-  <br>Simon</p>
-<p></p>
+<p>
+  After a lot of work, we've just released a major update to
+  the&nbsp;libraries (v5). Hopefully, you'll hardly notice...&nbsp;
+</p>
+<p>
+  The majority of this upgrade is totally behind the scenes,
+  getting the&nbsp;core robust and ready for the things we want to
+  do with the API now&nbsp;and in the future. Whilst it shouldn't
+  really be visible, please tell&nbsp;us if we break any of your
+  code when you upgrade! Our next focus with&nbsp;the Libraries
+  will be on the API itself, so expect some slightly
+  more&nbsp;invasive improvements then. And some of the new tricks
+  to come to&nbsp;light :)&nbsp;
+</p>
+<p>
+  ...but we couldn't do an update without giving you something new!
+  So&nbsp;in addition to the new Ticker and Timeout classes, we've
+  added file&nbsp;system access to the USB drive. No documentation
+  yet, but the API page&nbsp;should give you a clue:&nbsp;
+</p>
+<p>
+  http://mbed.co.uk/projects/libraries/api/mbed/trunk/LocalFileSystem&nbsp;
+</p>
+<p>
+  We think this might find some good applications, so we're
+  interested&nbsp;to hear how you use it.&nbsp;
+</p>
+<p>
+  When you start a new project, you will automatically pull in the
+  new&nbsp;v5 mbed Library. For existing projects, clicking on the
+  mbed library&nbsp;in your file tree should provide you with an
+  "update" button.&nbsp;
+</p>
+<p>
+  As ever, please bring to our attention any problems or questions
+  you&nbsp;have.&nbsp;
+</p>
+<p>
+  Have Fun!<br>
+  Simon
+</p>
+

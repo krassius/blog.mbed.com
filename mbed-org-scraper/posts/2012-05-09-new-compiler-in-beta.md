@@ -7,15 +7,25 @@ tags:           compiler, site, updates
 originalUrl:    https://developer.mbed.org/blog/entry/New-compiler-in-beta/
 ---
 
-<p>The latest mbed compiler is now available in beta!</p>
-<p>This release primarily has behind the scenes changes and bugfixes, but
-  there&apos;s one improvement you should definitely notice: <strong>speed!</strong>
+<p>
+  The latest mbed compiler is now available in beta!
 </p>
-<p>We have added incremental compilation support, which means that when compiling
-  large programs, subsequent recompiles will be much faster, only recompiling
-  those files which have changed. There&apos;s also performance improvements
-  to the UI in several areas.</p>
-<p>Try it out at <a href="http://mbed.org/betamode/">betamode</a> and please
-  let us know what you think and report any bugs in the <a href="http://mbed.org/forum/bugs-suggestions/">usual place</a>.
-  We&apos;ll aim to roll out the new version to all users in the next week
-  or two.</p>
+<p>
+  This release primarily has behind the scenes changes and
+  bugfixes, but there's one improvement you should definitely
+  notice: <strong>speed!</strong>
+</p>
+<p>
+  We have added incremental compilation support, which means that
+  when compiling large programs, subsequent recompiles will be much
+  faster, only recompiling those files which have changed. There's
+  also performance improvements to the UI in several areas.
+</p>
+<p>
+  Try it out at <a href="http://mbed.org/betamode/">betamode</a>
+  and please let us know what you think and report any bugs in the
+  <a href="http://mbed.org/forum/bugs-suggestions/">usual
+  place</a>. We'll aim to roll out the new version to all users in
+  the next week or two.
+</p>
+

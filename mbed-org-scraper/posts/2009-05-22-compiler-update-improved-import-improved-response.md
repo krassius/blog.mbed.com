@@ -7,21 +7,37 @@ tags:
 originalUrl:    https://developer.mbed.org/blog/entry/15/
 ---
 
-<p>We have just put some new compiler enhancements live. Hope you like&#xA0;them....</p>
-<p>The compiler importing functionality has been respun. Apart from being&#xA0;much
-  more stable, you can now import programs and files from both your&#xA0;desktop
-  and from subversion repository, making it easy to pull in&#xA0;other peoples
-  published examples. As before, libraries can also be&#xA0;pulled in from
-  subversion, making it easy to share more stable code&#xA0;bundles as libraries.</p>
-<p>The compiler framework and infrastructure have also been enhanced&#xA0;under
-  the hood; you should see the interface giving you a lot more&#xA0;feedback
-  while compiling, and a bottleneck has been removed so it&#xA0;should be
-  consistently more responsive too.&#xA0;We&apos;ve folded in some other
-  fixes too, so we&apos;re hoping this is all good&#xA0;news! But if you
-  do see any bad behaviour or bugs, please make sure&#xA0;you email us at
-  support@mbed.co.uk.</p>
-<p>Thinking about it, it&apos;d also be good to hear reports of things that&#xA0;work
-  better :) The bugs are most important to catch, but knowing&#xA0;things
-  that have worked out will help check we&apos;re moving in the right&#xA0;direction!</p>
-<p>Thanks,&#xA0;
-  <br>Simon</p>
+<p>
+  We have just put some new compiler enhancements live. Hope you
+  like&nbsp;them....
+</p>
+<p>
+  The compiler importing functionality has been respun. Apart from
+  being&nbsp;much more stable, you can now import programs and
+  files from both your&nbsp;desktop and from subversion repository,
+  making it easy to pull in&nbsp;other peoples published examples.
+  As before, libraries can also be&nbsp;pulled in from subversion,
+  making it easy to share more stable code&nbsp;bundles as
+  libraries.
+</p>
+<p>
+  The compiler framework and infrastructure have also been
+  enhanced&nbsp;under the hood; you should see the interface giving
+  you a lot more&nbsp;feedback while compiling, and a bottleneck
+  has been removed so it&nbsp;should be consistently more
+  responsive too.&nbsp;We've folded in some other fixes too, so
+  we're hoping this is all good&nbsp;news! But if you do see any
+  bad behaviour or bugs, please make sure&nbsp;you email us at
+  support@mbed.co.uk.
+</p>
+<p>
+  Thinking about it, it'd also be good to hear reports of things
+  that&nbsp;work better :) The bugs are most important to catch,
+  but knowing&nbsp;things that have worked out will help check
+  we're moving in the right&nbsp;direction!
+</p>
+<p>
+  Thanks,&nbsp;<br>
+  Simon
+</p>
+

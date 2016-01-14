@@ -1,6 +1,6 @@
 var async = require('async');
 var request = require('request');
-var html = require('html');
+var tidy = require('htmltidy').tidy;
 
 // The URL to your api'alizer instance
 var APIALIZER = 'http://localhost:8080/c/mbed_org/';
@@ -51,12 +51,18 @@ var q = async.queue(function(url, next) {
       articles++;
       if (articles % 10 === 0) {
         console.log('Logged ' + articles + ' articles');
+        // throw 1;
       }
 
       // We now have detail page, let's do something with it...
-      var pretty = html.prettyPrint(body.body, { indent_size: 2 });
+      tidy(body.body, {
+        // outputHtml: false,
+        showBodyOnly: true,
+        indent: true
+      }, function(err, pretty) {
+        if (err) throw err;
 
-      var md = `---
+        var md = `---
 layout:         post-mbed-org
 title:          "${body.title}"
 date:           ${body.date}
@@ -68,26 +74,27 @@ originalUrl:    ${body.originalUrl}
 ${pretty}
 `;
 
-      function pad(d) { return d < 10 ? '0' + d : d }
-      var d = new Date(body.date);
-      var pd = '' + d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
-      var parts = body.originalUrl.split('/').filter(f=>!!f);
+        function pad(d) { return d < 10 ? '0' + d : d }
+        var d = new Date(body.date);
+        var pd = '' + d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+        var parts = body.originalUrl.split('/').filter(f=>!!f);
 
-      var title = (parts[parts.length - 1].toLowerCase());
-      if (!isNaN(title)) {
-        title = body.title.toLowerCase().replace(/[^\w-]/g, '-').replace(/[ -]+/g, '-');
-        title = title.replace(/-$/, '');
-      }
-
-      var fullName = pd + '-' + title + '.md';
-
-      require('fs').writeFile(__dirname + '/posts/' + fullName, md, 'utf-8', function(err) {
-        if (err) {
-          console.error('Write', url, 'failed', err);
-          throw err;
+        var title = (parts[parts.length - 1].toLowerCase());
+        if (!isNaN(title)) {
+          title = body.title.toLowerCase().replace(/[^\w-]/g, '-').replace(/[ -]+/g, '-');
+          title = title.replace(/-$/, '');
         }
 
-        next();
+        var fullName = pd + '-' + title + '.md';
+
+        require('fs').writeFile(__dirname + '/posts/' + fullName, md, 'utf-8', function(err) {
+          if (err) {
+            console.error('Write', url, 'failed', err);
+            throw err;
+          }
+
+          next();
+        });
       });
     }
   });
