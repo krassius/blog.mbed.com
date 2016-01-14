@@ -1,0 +1,10 @@
+{
+    "name": "parser-manager",
+    "version": "0.0.1",
+    "main": "./manager.js",
+    "private": true,
+    "plugin": {
+        "consumes": [],
+        "provides": ["parser-manager"]
+    }
+}
