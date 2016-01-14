@@ -1,0 +1,9 @@
+{
+  "name": "apializer-example-ups",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "0.1.22",
+    "html": "0.0.10",
+    "request": "2.27.0"
+  }
+}
